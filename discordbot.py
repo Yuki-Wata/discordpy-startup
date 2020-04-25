@@ -21,8 +21,6 @@ async def send_message_every_30sec():
     if TF == False :
         url_list.append(Y.search())
         await channel_sent.send(Y.search())
-    else:
-        await channel_sent.send("失敗しました")
 
 @bot.event
 async def on_command_error(ctx, error):
